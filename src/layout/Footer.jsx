@@ -8,7 +8,7 @@ import { MdEmail } from 'react-icons/md';
 
 const Footer = () => {
   return (
-    <footer className=" w-full bg-slate-800 text-white py-6 md:py-10 mt-[250px]">
+    <footer className=" w-full bg-slate-800 text-white py-6 md:py-10 mt-[50px] ">
       <div className="max-w-7xl mx-auto px-8">
        
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
@@ -18,12 +18,12 @@ const Footer = () => {
               <Image 
                 src={footerlogo} 
                 alt="Logo" 
-                width={150} 
+                width={250} 
                 height={100}
-                className="h-auto"
+                className="object-cover"
               />
             </div>
-            <p className="text-white mb-4">
+            <p className="text-white text-lg font-semibold mb-4">
               From cups to bowls - practical packaging for real business needs. Let&apos;s talk about yours.
             </p>
             <div className="flex space-x-3">

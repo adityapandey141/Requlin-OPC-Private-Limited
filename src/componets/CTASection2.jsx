@@ -6,7 +6,7 @@ import Navigation  from "../assets/Navigating.jpg";
 const CTASection2 = () => {
   return (
     <section className="bg-[#FFFFFF] py-12">
-      <div className="max-w-6xl mx-auto px-6 md:px-12 flex flex-col md:flex-row items-center gap-10">
+      <div className="max-w-7xl mx-auto px-6 md:px-12 flex flex-col md:flex-row items-center gap-10">
       <div className="md:w-1/2 flex justify-center">
           <Image
             src={Navigation}

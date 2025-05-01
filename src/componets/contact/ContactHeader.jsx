@@ -12,9 +12,9 @@ const ContactHeader = () => {
       }}
     >
       <div className="bg-gradient-to-r from-green-50 via-yellow-50 to-purple-50 bg-opacity-70">
-        <div className="container mx-auto px-4 py-16 md:py-24">
+        <div className="max-w-7xl mx-auto px-4 py-16 md:py-24">
           <div className="flex flex-col md:flex-row items-start md:items-center justify-between">
-            {/* Left Side - Text Content */}
+            
             <div className="mb-8 md:mb-0">
               <h2 className="text-4xl md:text-5xl font-bold text-slate-800 mb-4">
                 CONTACT US

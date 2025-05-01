@@ -12,7 +12,7 @@ const CTASection = () => {
   };
 
   return (
-    <section className="w-full pt-10 pb-10">
+    <section className="w-full pt-10 pb-10 mb-[270px]">
       <ToastContainer position="top-center" />
       <div className="max-w-7xl relative z-10 rounded-lg shadow-md bg-white mx-auto px-4 sm:px-6 md:px-10 lg:px-16 -mb-[250px] flex flex-col md:flex-row items-center gap-8 sm:gap-10 md:gap-14">
         
@@ -26,7 +26,7 @@ const CTASection = () => {
          
           <button
             onClick={handleCallClick}
-            className="mt-6 bg-slate-900 text-white px-5 py-3 sm:px-6 sm:py-3 rounded-lg text-base sm:text-lg font-medium shadow-md hover:bg-[#F07E00] transition-all"
+            className="mt-6 bg-white text-black px-5 py-3 sm:px-6 sm:py-3 rounded-lg text-base sm:text-lg font-medium shadow-md hover:bg-[#F07E00] transition-all"
           >
             Reach Out Today
           </button>

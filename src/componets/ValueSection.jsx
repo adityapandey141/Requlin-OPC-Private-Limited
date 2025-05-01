@@ -32,7 +32,7 @@ const ValueSection = () => {
 
   return (
     <div className="w-full py-16 bg-white">
-      <div className="max-w-6xl mx-auto px-4">
+      <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-12">
           <p className="text-gray-600 uppercase tracking-wide text-sm">What Drives Us?</p>
           <h1 className="text-3xl font-bold text-gray-800 mt-2">Our Values</h1>
@@ -55,7 +55,7 @@ const ValueSection = () => {
         </div>
 
       
-        <div className="hidden md:block absolute left-1/6 top-60 w-4/6 h-0.5 border-t-2 border-dashed border-gray-300 z-0 mx-auto"></div>
+        {/* <div className="hidden md:block absolute left-1/6 top-60 w-4/6 h-0.5 border-t-2 border-dashed border-gray-300 z-0 mx-auto"></div> */}
       </div>
     </div>
   );

@@ -52,7 +52,7 @@ const Header = () => {
       </div>
 
       <nav className="bg-green-600 text-white ">
-        <div className="container mx-auto flex items-center justify-between px-4 sm:px-6 md:px-8">
+        <div className="max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6 md:px-8">
           <div className="flex space-x-4 md:space-x-6 hidden md:flex">
             <Link href="/" className="py-4 px-6 font-medium hover:bg-green-700 rounded">HOME</Link>
             <Link href="/about-us" className="py-4 px-6 font-medium hover:bg-green-700 rounded">ABOUT</Link>

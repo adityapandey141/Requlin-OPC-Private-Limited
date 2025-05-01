@@ -31,12 +31,12 @@ const SolutionsSection = () => {
 
   return (
     <div className="w-full bg-gray-100 py-16 px-4">
-      <div className="max-w-6xl mx-auto text-center mb-12">
+      <div className="max-w-7xl mx-auto text-center mb-12">
         <p className="text-gray-500 mb-2">Solutions</p>
         <h1 className="text-3xl font-bold text-black">Strategies for Clinical Success</h1>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-7xl mx-auto">
         {studyOptions.map((option, index) => (
           <div 
             key={index}

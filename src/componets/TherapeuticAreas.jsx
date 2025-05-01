@@ -57,7 +57,7 @@ const subheadings = [
 ];
 
 const TherapeuticAreas = () => (
-  <section className="bg-green-500 py-16 relative">
+  <section className="bg-green-500 py-16 relative mb-[50px]">
     <div className="absolute inset-0 z-0">
       <Image
         src={ChooseUs}
@@ -68,7 +68,7 @@ const TherapeuticAreas = () => (
       />
     </div>
 
-    <div className="container mx-auto px-4 relative z-10">
+    <div className="max-w-7xl mx-auto px-4 relative z-10">
       <div className="text-center mb-12">
         <h4 className="text-white text-lg mb-2">Areas of Expertise</h4>
         <h1 className="text-white text-3xl font-bold">Diverse Therapeutic Specialisations</h1>
