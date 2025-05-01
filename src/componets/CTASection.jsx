@@ -12,7 +12,7 @@ const CTASection = () => {
   };
 
   return (
-    <section className="w-full pt-10 pb-10 bg-[#F5F5FF]">
+    <section className="w-full pt-10 pb-10">
       <ToastContainer position="top-center" />
       <div className="max-w-7xl relative z-10 rounded-lg shadow-md bg-white mx-auto px-4 sm:px-6 md:px-10 lg:px-16 -mb-[250px] flex flex-col md:flex-row items-center gap-8 sm:gap-10 md:gap-14">
         

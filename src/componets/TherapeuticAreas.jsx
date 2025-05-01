@@ -58,7 +58,6 @@ const subheadings = [
 
 const TherapeuticAreas = () => (
   <section className="bg-green-500 py-16 relative">
-   
     <div className="absolute inset-0 z-0">
       <Image
         src={ChooseUs}
@@ -69,14 +68,12 @@ const TherapeuticAreas = () => (
       />
     </div>
 
-   
     <div className="container mx-auto px-4 relative z-10">
       <div className="text-center mb-12">
         <h4 className="text-white text-lg mb-2">Areas of Expertise</h4>
         <h1 className="text-white text-3xl font-bold">Diverse Therapeutic Specialisations</h1>
       </div>
 
-  
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 text-center">
         {subheadings.map(({ title, icon }, index) => (
           <div key={index} className="bg-white/10 text-white p-6 rounded-lg shadow flex flex-col items-center">

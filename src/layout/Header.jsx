@@ -55,21 +55,15 @@ const Header = () => {
         <div className="container mx-auto flex items-center justify-between px-4 sm:px-6 md:px-8">
           <div className="flex space-x-4 md:space-x-6 hidden md:flex">
             <Link href="/" className="py-4 px-6 font-medium hover:bg-green-700 rounded">HOME</Link>
-            <Link href="/about" className="py-4 px-6 font-medium hover:bg-green-700 rounded">ABOUT</Link>
+            <Link href="/about-us" className="py-4 px-6 font-medium hover:bg-green-700 rounded">ABOUT</Link>
             <div className="relative group">
-              <Link href="/courses" className="py-4 px-6 font-medium hover:bg-green-700 flex items-center rounded">
+              <Link href="/course" className="py-4 px-6 font-medium hover:bg-green-700 flex items-center rounded">
                 OUR COURSES
-                <svg className="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
-                </svg>
+               
               </Link>
-              <div className="absolute hidden group-hover:block bg-white text-gray-800 shadow-lg z-10 w-48">
-                <Link href="/courses/web-development" className="block px-4 py-2 hover:bg-gray-100 rounded">Web Development</Link>
-                <Link href="/courses/app-development" className="block px-4 py-2 hover:bg-gray-100 rounded">App Development</Link>
-                <Link href="/courses/digital-marketing" className="block px-4 py-2 hover:bg-gray-100 rounded">Digital Marketing</Link>
-              </div>
+              
             </div>
-            <Link href="/gallery" className="py-4 px-6 font-medium hover:bg-green-700 rounded">GALLERY</Link>
+            
             <Link href="/contact-us" className="py-4 px-6 font-medium hover:bg-green-700 rounded">CONTACT</Link>
           </div>
 
@@ -97,7 +91,7 @@ const Header = () => {
           <Link href="/" className="block py-4 px-6 text-white hover:bg-green-700">HOME</Link>
           <Link href="/about" className="block py-4 px-6 text-white hover:bg-green-700">ABOUT</Link>
           <Link href="/courses" className="block py-4 px-6 text-white hover:bg-green-700">OUR COURSES</Link>
-          <Link href="/gallery" className="block py-4 px-6 text-white hover:bg-green-700">GALLERY</Link>
+         
           <Link href="/contact-us" className="block py-4 px-6 text-white hover:bg-green-700">CONTACT</Link>
         </div>
       </nav>

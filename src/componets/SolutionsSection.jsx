@@ -1,6 +1,5 @@
 "use client";
 import React, { useState } from 'react';
-import { ArrowRight } from 'lucide-react';
 import Image from 'next/image'; 
 import Studyimg1 from "../assets/Studyimg1.jpg";
 import Studyimg2 from "../assets/Studyimg2.jpg";
@@ -64,13 +63,6 @@ const SolutionsSection = () => {
               <p className="text-gray-600">{option.description}</p>
             </div>
 
-            <div className="absolute bottom-6 right-6">
-              <div 
-                className="flex items-center justify-center w-10 h-10 rounded-full bg-gray-200 hover:bg-gray-300 transition-colors"
-              >
-                <ArrowRight size={20} className="text-gray-700" />
-              </div>
-            </div>
           </div>
         ))}
       </div>

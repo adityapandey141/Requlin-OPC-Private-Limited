@@ -7,11 +7,8 @@ import WhoWeServe from '@/componets/WhoWeServe';
 import CourseSection from '@/componets/CourseSection';
 import TherapeuticAreas from '@/componets/TherapeuticAreas';
 import CTASection from '@/componets/CTASection';
-import ServiceSection from '@/componets/ServiceSection';
 import AboutClinicalResearch from '@/componets/AboutClinicalResearch';
-import FAQ from '@/componets/FAQ';
-import TechSections from '@/componets/TechSections';
-import CTASection2 from '@/componets/CTASection2';
+
 
 
 
@@ -34,12 +31,9 @@ const page = () => {
     <WhoWeServe/>
     <CourseSection/>
     <TherapeuticAreas/>
-    <CTASection/>
-    <ServiceSection/>
     <AboutClinicalResearch/>
-    <FAQ/>
-    <TechSections/>
-    <CTASection2/>
+    <CTASection/>
+    
    
    
     </div>

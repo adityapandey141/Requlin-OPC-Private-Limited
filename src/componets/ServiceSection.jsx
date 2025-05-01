@@ -74,15 +74,15 @@ const ServiceSection = () => {
   ];
 
   return (
-    <section className="py-10 sm:py-14 md:py-20 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-[230px]">
+    <section className="py-10 sm:py-14 md:py-20 ">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
         <div className="text-center mb-10 sm:mb-14">
           <h4 className="text-black text-sm sm:text-base font-medium mb-2 tracking-wide uppercase">Services</h4>
           <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 leading-snug">
             That Support Every Stage of Clinical Research
           </h2>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {features.map((feature, index) => (
             <FeatureCard
               key={index}
