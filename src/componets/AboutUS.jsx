@@ -5,7 +5,7 @@ import StudyImg from "../assets/Studyimg1.jpg";
 
 const AboutUS = () => {
   return (
-    <div className="max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
+    <div className="max-w-7xl mx-auto px-4 py-12 md:px-6 lg:px-8">
       <div className="flex flex-col sm:flex-row gap-8 items-center">
        
       
@@ -31,7 +31,7 @@ const AboutUS = () => {
         </div>
    
         <div className="sm:w-1/2 text-center sm:text-left">
-          <p className="text-gray-500 uppercase tracking-wider text-sm"> About Requlin</p>
+        <p className="text-black text-xl mb-2">About Requlin</p>
           <h1 className="text-2xl sm:text-3xl font-bold text-black mt-4 sm:mt-2 mb-4">
             We Walk Beside You in Every Step of Clinical Research
           </h1>

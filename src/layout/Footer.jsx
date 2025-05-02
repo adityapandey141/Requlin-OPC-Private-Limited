@@ -1,14 +1,14 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import footerlogo from "../assets/footerlogo.png";
+import RequlinLogo from "../assets/RequlinLogo.png";
 import { FaPhoneAlt, FaFacebook, FaTwitter, FaYoutube } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
 
 
 const Footer = () => {
   return (
-    <footer className=" w-full bg-slate-800 text-white py-6 md:py-10 mt-[50px] ">
+    <footer className=" w-full bg-[#40A63D] text-white py-6 md:py-10 ">
       <div className="max-w-7xl mx-auto px-8">
        
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
@@ -16,7 +16,7 @@ const Footer = () => {
           <div className="flex flex-col items-start">
             <div className="mb-4">
               <Image 
-                src={footerlogo} 
+                src={RequlinLogo} 
                 alt="Logo" 
                 width={250} 
                 height={100}

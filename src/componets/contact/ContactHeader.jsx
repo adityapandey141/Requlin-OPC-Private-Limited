@@ -23,20 +23,6 @@ const ContactHeader = () => {
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
               </p>
             </div>
-
-            {/* Right Side - Apply Button */}
-            <div>
-              <Link
-                href="/apply"
-                className="flex items-center bg-orange-500 hover:bg-orange-600 text-white font-medium py-4 px-6 rounded-lg transition-colors duration-300"
-              >
-                <div className="mr-3 bg-orange-400 rounded-full p-2">
-                  <Globe size={24} />
-                </div>
-                <span className="text-lg uppercase mr-2">Apply Online</span>
-                <ArrowRight size={20} />
-              </Link>
-            </div>
           </div>
         </div>
       </div>

@@ -17,7 +17,7 @@ const CTASection2 = () => {
           />
         </div>
         <div className="md:w-1/2">
-        <span className="text-[#F07E00] bg-[#F4F0FF] px-3 py-1 rounded-md text-xs sm:text-sm font-semibold">
+        <span className="text-[#000000]  px-3 py-1 rounded-md text-xs sm:text-xl font-semibold">
         Let’s Talk About Your Goals
           </span>
           <h2 className="text-3xl font-bold text-black mt-4">
@@ -26,7 +26,7 @@ const CTASection2 = () => {
           </h2>
           
           <Link href="/contact-us">
-            <button className="mt-6 bg-[#3C65F5] text-white px-6 py-3 rounded-lg text-lg font-medium shadow-md hover:bg-[#0E264E] transition-all">
+            <button className="mt-6 bg-[#F0B100] text-white px-6 py-3 rounded-lg text-lg font-medium shadow-md hover:bg-[#D18700] transition-all">
                NOW
             </button>
           </Link>

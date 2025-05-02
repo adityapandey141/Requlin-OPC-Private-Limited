@@ -71,7 +71,7 @@ const TechSections = () => {
     <div className="bg-gray-100 py-8 sm:py-12 lg:py-16 px-4 sm:px-6 md:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-8 sm:mb-12">
-          <p className="text-gray-600 mb-2">Courses</p>
+          <p className="text-black text-xl mb-2">Courses</p>
           <h1 className="text-2xl sm:text-3xl font-bold text-black">That Prepares You for Real Clinical Roles</h1>
         </div>
 

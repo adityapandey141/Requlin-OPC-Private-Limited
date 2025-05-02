@@ -53,7 +53,7 @@ const CourseSection = () => {
     <section className="p-4 sm:p-8 md:p-12 lg:p-16 bg-gray-100">
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-8 sm:mb-12">
-          <p className="text-gray-600 uppercase tracking-wider mb-2">Educational Courses</p>
+        <p className="text-black text-xl mb-2">Educational Courses</p>
           <h1 className="text-2xl sm:text-3xl font-bold text-black">Building Expertise in Clinical Research</h1>
         </div>
 

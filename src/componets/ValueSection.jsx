@@ -34,7 +34,7 @@ const ValueSection = () => {
     <div className="w-full py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-12">
-          <p className="text-gray-600 uppercase tracking-wide text-sm">What Drives Us?</p>
+        <p className=" text-xl mb-2">What Drives Us?</p>
           <h1 className="text-3xl font-bold text-gray-800 mt-2">Our Values</h1>
         </div>
 

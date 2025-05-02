@@ -33,13 +33,13 @@ const WhoWeServe = () => {
         style={{
           backgroundImage: `url(${courcesbg.src})`,
           backgroundBlendMode: "multiply",
-          backgroundColor: "rgba(0,0,0,0.3)"
+          backgroundColor: "rgba(0,0,0,0.6)"
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-black/50 to-black/50"></div>
 
         <div className="max-w-7xl mx-auto relative text-center">
-          <h2 className="text-gray-300 text-base sm:text-lg mb-2">Who We Serve</h2>
+          <p className="text-white text-xl mb-2">Who We Serve</p>
           <h1 className="text-white text-2xl sm:text-3xl md:text-4xl font-bold mb-10">Our Clients</h1>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
@@ -54,7 +54,7 @@ const WhoWeServe = () => {
                 >
                   <div className="absolute inset-0 bg-black/50"></div>
                   <div className="relative  flex flex-col justify-center items-center h-full">
-                    <h3 className="text-white text-sm sm:text-xl font-semibold text-center">
+                    <h3 className="text-white text-xl font-semibold text-center">
                       {program.title}
                     </h3>
                   </div>

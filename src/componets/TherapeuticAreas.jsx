@@ -64,19 +64,19 @@ const TherapeuticAreas = () => (
         alt="Why Choose Us"
         layout="fill"
         objectFit="cover"
-        className="opacity-10"
+        className="opacity-5"
       />
     </div>
 
     <div className="max-w-7xl mx-auto px-4 relative z-10">
       <div className="text-center mb-12">
-        <h4 className="text-white text-lg mb-2">Areas of Expertise</h4>
+        <h4 className="text-white text-xl mb-2">Areas of Expertise</h4>
         <h1 className="text-white text-3xl font-bold">Diverse Therapeutic Specialisations</h1>
       </div>
 
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 text-center">
         {subheadings.map(({ title, icon }, index) => (
-          <div key={index} className="bg-white/10 text-white p-6 rounded-lg shadow flex flex-col items-center">
+          <div key={index} className="bg-[#00a63e] text-white p-6 rounded-lg shadow flex flex-col items-center">
             {icon}
             <h4 className="text-lg font-semibold">{title}</h4>
           </div>

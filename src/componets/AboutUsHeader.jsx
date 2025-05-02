@@ -16,25 +16,12 @@ const AboutUsHeader = () => {
               <div className="flex flex-col md:flex-row items-start md:items-center justify-between">
              
                 <div className="mb-8 md:mb-0">
-                  <h2 className="text-4xl md:text-5xl font-bold text-slate-800 mb-4">
+                  <h2 className="text-4xl md:text-5xl font-bold text-black mb-4">
                    ABOUT US
                   </h2>
-                  <p className="text-slate-600 max-w-lg">
+                  <p className="text-slate-600 text-xl max-w-lg">
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                   </p>
-                </div>
-    
-                <div>
-                  <Link
-                    href="/apply"
-                    className="flex items-center bg-orange-500 hover:bg-orange-600 text-white font-medium py-4 px-6 rounded-lg transition-colors duration-300"
-                  >
-                    <div className="mr-3 bg-orange-400 rounded-full p-2">
-                      <Globe size={24} />
-                    </div>
-                    <span className="text-lg uppercase mr-2">Apply Online</span>
-                    <ArrowRight size={20} />
-                  </Link>
                 </div>
               </div>
             </div>

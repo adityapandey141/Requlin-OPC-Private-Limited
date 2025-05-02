@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import { Search } from 'lucide-react';
 import Image from 'next/image';
-import logo from "../assets/logo.png";
+import RequlinLogo from "../assets/RequlinLogo.png";
 
 const Header = () => {
   const [searchQuery, setSearchQuery] = useState('');
@@ -21,9 +21,9 @@ const Header = () => {
   return (
     <header className="w-full">
       <div className="bg-white py-3 md:py-4">
-        <div className="max-w-7xl mx-auto flex justify-between items-center px-4 sm:px-6 md:px-8">
+        <div className="max-w-7xl mx-auto flex justify-between items-center px-2 sm:px-2 md:px-0">
           <Link href="/" className="flex items-center">
-            <Image src={logo} alt="Logo" width={200} height={200} className="object-contain" />
+            <Image src={RequlinLogo} alt="Logo" className="object-contain "  />
           </Link>
 
           <button className="md:hidden text-white" onClick={toggleMobileMenu} aria-label="Toggle mobile menu">
@@ -34,25 +34,25 @@ const Header = () => {
 
           <div className="hidden md:flex space-x-16">
             <div className="text-center">
-              <p className="text-gray-500 text-xs sm:text-sm">EMAIL</p>
-              <a href="mailto:info@edumart.org" className="text-gray-700 text-xs sm:text-sm font-semibold">info@edumart.org</a>
+              <p className="text-gray-500 text-xs sm:text-lg">EMAIL</p>
+              <a href="mailto:info@edumart.org" className="text-gray-700 text-xs sm:text-base font-semibold">info@edumart.org</a>
             </div>
             <div className="text-center">
-              <p className="text-gray-500 text-xs sm:text-sm">TOLL FREE</p>
-              <p className="text-gray-700 text-xs sm:text-sm font-semibold">1800 000 0000</p>
+              <p className="text-gray-500 text-xs sm:text-lg">TOLL FREE</p>
+              <p className="text-gray-700 text-xs sm:text-base font-semibold">1800 000 0000</p>
             </div>
-            <Link href="/login" className="bg-white border border-blue-500 text-blue-500 py-2 px-6 rounded flex items-center">
+            {/* <Link href="/login" className="bg-white border border-[#40A63D] text-grey-300 py-2 px-6 rounded flex items-center">
               Student Login
               <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
                 <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
               </svg>
-            </Link>
+            </Link> */}
           </div>
         </div>
       </div>
 
       <nav className="bg-green-600 text-white ">
-        <div className="max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6 md:px-8">
+        <div className="max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-2 md:px-0">
           <div className="flex space-x-4 md:space-x-6 hidden md:flex">
             <Link href="/" className="py-4 px-6 font-medium hover:bg-green-700 rounded">HOME</Link>
             <Link href="/about-us" className="py-4 px-6 font-medium hover:bg-green-700 rounded">ABOUT</Link>
