@@ -12,14 +12,14 @@ import ProspectsIco from '../assets/ProspectsIco.png';
 import CertificationIco from '../assets/CertificationIco.png';
 
 const BannerContent = ({ title, text, buttons, textColor = 'text-white', centered = false }) => (
-  <div className="max-w-7xl px-6 sm:px-10 lg:px-20">
+  <div className={`max-w-6xl ${title === 'Clinical Trials' ? 'px-6 sm:px-10 md:px-20 lg:px-[200px]' : 'px-6 sm:px-10 lg:px-20'}`}>
     <div className={`${textColor} ${centered ? 'mx-auto max-w-xl text-center' : ''}`}>
-      <p className="text-lg sm:text-xl md:text-2xl font-medium mb-2">EXPLORE THE WORLD OF</p>
-      <h1 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4">{title}</h1>
+      <p className="text-base sm:text-lg md:text-2xl font-medium mb-2">EXPLORE THE WORLD OF</p>
+      <h1 className="text-lg sm:text-xl md:text-3xl font-bold mb-4">{title}</h1>
       <p className="text-sm sm:text-base md:text-lg mb-6">{text}</p>
       <div className={`flex flex-wrap gap-4 ${centered ? 'justify-center' : 'justify-start'}`}>
         {buttons.map((button, index) => (
-          <Link key={index} href={button.link}>
+          <Link key={index} href={button}>
             <span className="inline-block bg-yellow-500 hover:bg-yellow-600 text-white py-2 sm:py-3 px-6 rounded-md font-medium transition-colors cursor-pointer">
               {button.label}
             </span>
@@ -49,8 +49,8 @@ const HeroSection = () => {
       centered: true,
       alignment: 'center',
       buttons: [
-        { label: 'Explore', link: '/explore' },
-        { label: 'Connect', link: '/connect' },
+        { label: 'Explore',  },
+        { label: 'Connect', },
       ],
     },
     {
@@ -58,14 +58,14 @@ const HeroSection = () => {
       title: 'Clinical Trials',
       text: 'Comprehensive services for clinical excellence',
       alignment: 'left',
-      buttons: [{ label: 'View All', link: '/view-all' }],
+      buttons: [{ label: 'View All',  }],
     },
     {
       image: banner1,
       title: 'Industry-Relevant Courses',
-      text: 'Advancing careers in clinical research with the skills needed in today\'s landscape',
+      text: "Advancing careers in clinical research with the skills needed in today's landscape",
       alignment: 'right',
-      buttons: [{ label: 'Browse', link: '/browse' }],
+      buttons: [{ label: 'Browse',  }],
     },
   ];
 
@@ -101,20 +101,18 @@ const HeroSection = () => {
   return (
     <div className="w-full">
       <main>
-
-
-        <section className="relative w-full h-[70vh] sm:h-[80vh] lg:h-screen overflow-hidden">
-          <div className="relative h-full w-full">
+        <section className="relative w-full h-[70vh] sm:h-[80vh] lg:h-screen overflow-hidden z-0"  id="herosection">
+          <div className="relative h-full w-full ">
             <Image
               src={currentBanner.image}
               alt={currentBanner.title}
               fill
               className="object-cover"
               priority
-            />
-            <div className="absolute inset-0 bg-opacity-30 z-10" />
-          </div>
 
+            />
+            <div className="absolute inset-0 bg-opacity-30 " />
+          </div>
 
           <div
             className={`absolute inset-0 flex items-center z-20 px-4 ${
@@ -135,21 +133,15 @@ const HeroSection = () => {
           </div>
         </section>
 
-    
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 ">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 md:mt-[-70px] relative" id="herosection2">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
             {features.map((feature, index) => (
               <div
                 key={index}
                 className={`${feature.bgColor} text-white p-6 sm:p-8 md:p-10 flex items-center rounded-md shadow-lg`}
               >
                 <div className="mr-4 sm:mr-6 shrink-0">
-                  <Image
-                    src={feature.icon}
-                    alt={feature.alt}
-                    width={80}
-                    height={80}
-                  />
+                  <Image src={feature.icon} alt={feature.alt} width={80} height={80} />
                 </div>
                 <div>
                   <h3 className="text-base sm:text-lg md:text-xl font-bold mb-2">{feature.title}</h3>
@@ -159,7 +151,6 @@ const HeroSection = () => {
             ))}
           </div>
         </div>
-
       </main>
     </div>
   );

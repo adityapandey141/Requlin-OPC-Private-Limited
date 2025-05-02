@@ -1,1 +1,10 @@
 @import "tailwindcss";
+
+
+#herosection{
+    z-index: 0 !important;
+}
+
+#herosection2{
+    z-index: 10 !important;
+}
