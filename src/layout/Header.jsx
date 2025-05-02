@@ -89,8 +89,8 @@ const Header = () => {
 
         <div className={`md:hidden ${isMobileMenuOpen ? 'block' : 'hidden'} bg-green-600`}>
           <Link href="/" className="block py-4 px-6 text-white hover:bg-green-700">HOME</Link>
-          <Link href="/about" className="block py-4 px-6 text-white hover:bg-green-700">ABOUT</Link>
-          <Link href="/courses" className="block py-4 px-6 text-white hover:bg-green-700">OUR COURSES</Link>
+          <Link href="/about-us" className="block py-4 px-6 text-white hover:bg-green-700">ABOUT</Link>
+          <Link href="/course" className="block py-4 px-6 text-white hover:bg-green-700">OUR COURSES</Link>
          
           <Link href="/contact-us" className="block py-4 px-6 text-white hover:bg-green-700">CONTACT</Link>
         </div>

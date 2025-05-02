@@ -10,22 +10,18 @@ const WhoWeServe = () => {
   const programs = [
     {
       title: "Research Sponsors",
-      courses: "COURSES",
       image: courseimg1, 
     },
     {
       title: "Contract Research Organizations (CROs)",
-      courses: "COURSES",
       image: courseimg2, 
     },
     {
       title: "Research Sites",
-      courses: "COURSES",
       image: courseimg3, 
     },
     {
       title: "Research Participants",
-      courses: "COURSES",
       image: courseimg4, 
     }
   ];
@@ -62,10 +58,6 @@ const WhoWeServe = () => {
                       {program.title}
                     </h3>
                   </div>
-                </div>
-
-                <div className="bg-green-500 text-white px-4 py-2 text-center">
-                  <span className="text-sm sm:text-base font-medium">{program.courses}</span>
                 </div>
               </div>
             ))}
