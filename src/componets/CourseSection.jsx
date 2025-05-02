@@ -1,18 +1,15 @@
-'use client';
-import React from 'react';
-import Link from 'next/link';
-import Image from 'next/image';
+"use client";
+import React from "react";
+import Link from "next/link";
+import Image from "next/image";
 
-import eventimg1 from '../assets/eventimg1.jpg';
-import eventimg2 from '../assets/eventimg2.jpg';
-import eventimg3 from '../assets/eventimg3.jpg';
+import eventimg1 from "../assets/eventimg1.jpg";
+import eventimg2 from "../assets/eventimg2.jpg";
+import eventimg3 from "../assets/eventimg3.jpg";
 
 const NewsCard = ({ image, title, link }) => {
   return (
-    <Link
-      href={link}
-      className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300"
-    >
+    <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
       <div className="relative w-full aspect-[16/9] sm:aspect-[4/3]">
         <Image
           src={image}
@@ -23,10 +20,10 @@ const NewsCard = ({ image, title, link }) => {
           priority
         />
       </div>
-      <div className="p-4">
-        <h3 className="text-base sm:text-lg font-semibold text-gray-800 mb-2">{title}</h3>
+      <div className="p-6">
+        <h3 className="text-xl font-medium text-gray-700 mb-2">{title}</h3>
       </div>
-    </Link>
+    </div>
   );
 };
 
@@ -34,18 +31,18 @@ const CourseSection = () => {
   const newsItems = [
     {
       image: eventimg1,
-      title: 'Diploma in Pharmacovigilance',
-      link: '/news/new-features',
+      title: "Diploma in Pharmacovigilance",
+      link: "",
     },
     {
       image: eventimg2,
-      title: 'Diploma in Clinical SAS',
-      link: '/news/lorem-ipsum',
+      title: "Diploma in Clinical SAS",
+      link: "",
     },
     {
       image: eventimg3,
-      title: 'Diploma in Medical Coding',
-      link: '/news/online-mba',
+      title: "Diploma in Medical Coding",
+      link: "",
     },
   ];
 
@@ -53,8 +50,10 @@ const CourseSection = () => {
     <section className="p-4 sm:p-8 md:p-12 lg:p-16 bg-gray-100">
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-8 sm:mb-12">
-        <p className="text-black text-xl mb-2">Educational Courses</p>
-          <h1 className="text-2xl sm:text-3xl font-bold text-black">Building Expertise in Clinical Research</h1>
+          <p className="text-black text-xl mb-2">Educational Courses</p>
+          <h1 className="text-2xl sm:text-3xl font-bold text-black">
+            Building Expertise in Clinical Research
+          </h1>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
