@@ -42,7 +42,7 @@ const WhoWeServe = () => {
       >
         <div className="absolute inset-0 bg-gradient-to-r from-black/50 to-black/50"></div>
 
-        <div className="max-w-6xl mx-auto relative text-center">
+        <div className="max-w-7xl mx-auto relative text-center">
           <h2 className="text-gray-300 text-base sm:text-lg mb-2">Who We Serve</h2>
           <h1 className="text-white text-2xl sm:text-3xl md:text-4xl font-bold mb-10">Our Clients</h1>
 

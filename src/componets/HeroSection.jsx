@@ -11,6 +11,28 @@ import ApplyOnline from '../assets/ApplyOnline.png';
 import ProspectsIco from '../assets/ProspectsIco.png';
 import CertificationIco from '../assets/CertificationIco.png';
 
+
+const BannerContent = ({ title, text, buttons, textColor = 'text-white', centered = false }) => (
+  <div className="max-w-7xl px-6 sm:px-10 lg:px-20">
+    <div className={`${textColor} ${centered ? 'mx-auto max-w-xl text-center' : ''}`}>
+      <p className="text-lg sm:text-xl md:text-2xl font-medium mb-2">
+        EXPLORE THE WORLD OF
+      </p>
+      <h1 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4">{title}</h1>
+      <p className="text-sm sm:text-base md:text-lg mb-6">{text}</p>
+      <div className={`flex flex-wrap gap-4 ${centered ? 'justify-center' : 'justify-start'}`}>
+        {buttons.map((button, index) => (
+          <Link key={index} href={button.link}>
+            <span className="inline-block bg-yellow-500 hover:bg-yellow-600 text-white py-2 sm:py-3 px-6 rounded-md font-medium transition-colors cursor-pointer">
+              {button.label}
+            </span>
+          </Link>
+        ))}
+      </div>
+    </div>
+  </div>
+);
+
 const HeroSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const totalSlides = 3;
@@ -39,7 +61,6 @@ const HeroSection = () => {
       title: 'Clinical Trials',
       text: 'Comprehensive services for clinical excellence',
       alignment: 'left',
-      link: '/mba-program',
       buttons: [{ label: 'View All', link: '/view-all' }],
     },
     {
@@ -78,76 +99,47 @@ const HeroSection = () => {
     },
   ];
 
+  const currentBanner = banners[currentSlide];
+
   return (
     <div className="w-full">
       <main>
-      
+
         <section className="relative w-full h-[70vh] sm:h-[80vh] lg:h-screen max-h-[600px] overflow-hidden">
           <div className="relative h-full w-full">
             <Image
-              src={banners[currentSlide].image}
-              alt={banners[currentSlide].title}
+              src={currentBanner.image}
+              alt={currentBanner.title}
               fill
               className="object-cover"
               priority
             />
-          
-            <div className="absolute inset-0 bg-opacity-30 z-10" />
+            <div className="absolute inset-0  bg-opacity-30 z-10" />
           </div>
 
           
           <div
             className={`absolute inset-0 flex items-center z-20 ${
-              banners[currentSlide].centered
+              currentBanner.centered
                 ? 'justify-center text-center'
-                : banners[currentSlide].alignment === 'right'
+                : currentBanner.alignment === 'right'
                 ? 'justify-end'
-                : banners[currentSlide].alignment === 'left'
+                : currentBanner.alignment === 'left'
                 ? 'justify-start'
                 : 'justify-center'
             }`}
           >
-            <div className="max-w-7xl px-6 sm:px-10 lg:px-20">
-              <div
-                className={`${
-                  banners[currentSlide].title === 'Industry-Relevant Courses'
-                    ? 'text-black'
-                    : 'text-white'
-                } ${banners[currentSlide].centered ? 'mx-auto max-w-xl' : ''}`}
-              >
-                <p className="text-lg sm:text-xl md:text-2xl font-medium mb-2">
-                  EXPLORE THE WORLD OF
-                </p>
-                <h1 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4">
-                  {banners[currentSlide].title}
-                </h1>
-                <p className="text-sm sm:text-base md:text-lg mb-6">
-                  {banners[currentSlide].text}
-                </p>
-
-               
-                <div
-                  className={`flex flex-wrap gap-4 ${
-                    banners[currentSlide].centered
-                      ? 'justify-center'
-                      : 'justify-start'
-                  }`}
-                >
-                  {banners[currentSlide].buttons.map((button, index) => (
-                    <Link key={index} href={button.link}>
-                      <span className="inline-block bg-yellow-500 hover:bg-yellow-600 text-white py-2 sm:py-3 px-6 rounded-md font-medium transition-colors cursor-pointer">
-                        {button.label}
-                      </span>
-                    </Link>
-                  ))}
-                </div>
-              </div>
-            </div>
+            <BannerContent
+              title={currentBanner.title}
+              text={currentBanner.text}
+              buttons={currentBanner.buttons}
+              textColor={currentBanner.title === 'Industry-Relevant Courses' ? 'text-black' : 'text-white'}
+              centered={currentBanner.centered}
+            />
           </div>
         </section>
 
-       
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 py-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             {features.map((feature, index) => (
               <div
@@ -172,6 +164,7 @@ const HeroSection = () => {
             ))}
           </div>
         </div>
+
       </main>
     </div>
   );
