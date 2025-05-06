@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import CTAimage from "../assets/CTA.jpeg";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -8,7 +9,7 @@ const CTASection = () => {
   const handleCallClick = () => {
     toast.success("Thanks for reaching out! 📞");
 
-    window.location.href = "tel:+919998125428";
+    window.location.href = "tel:+917550240992";
   };
 
   return (
@@ -22,12 +23,11 @@ const CTASection = () => {
             people-focused?
           </h2>
 
-          <button
-            onClick={handleCallClick}
-            className="mt-6  text-black px-5 py-3 sm:px-6 sm:py-3 rounded-lg text-base sm:text-lg font-medium shadow-md bg-[#F0B100] hover:bg-[#D18700] transition-all"
-          >
+          <Link href="/contact-us">
+            <button className="mt-6 bg-[#F0B100] text-white px-6 py-3 rounded-lg text-lg font-medium shadow-md hover:bg-[#D18700] transition-all">
             Reach Out Today
-          </button>
+            </button>
+            </Link>
         </div>
 
         <div className="w-full md:w-1/2 flex justify-center">

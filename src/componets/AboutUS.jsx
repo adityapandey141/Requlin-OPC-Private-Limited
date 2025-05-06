@@ -5,7 +5,7 @@ import StudyImg from "../assets/Studyimg1.jpg";
 
 const AboutUS = () => {
   return (
-    <div className="max-w-7xl mx-auto px-4 py-12 md:px-6 lg:px-8">
+    <div className="max-w-7xl mx-auto px-4 py-12 md:px-6 lg:px-8"  id="about">
       <div className="flex flex-col sm:flex-row gap-8 items-center">
         <div className="sm:w-1/2 relative">
           <div className="relative w-full h-64 sm:h-auto aspect-video">

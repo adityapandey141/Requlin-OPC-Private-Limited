@@ -73,7 +73,7 @@ const Header = () => {
         </div>
       </div>
 
-      <nav className="bg-bl text-white ">
+      <nav className="bg-bl text-white py-4 ">
         <div className="max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-2 md:px-0">
           <div className="flex space-x-4 md:space-x-6 hidden md:flex">
             <Link
@@ -83,7 +83,7 @@ const Header = () => {
               HOME
             </Link>
             <Link
-              href="/about-us"
+              href="#about"
               className="py-4 px-6 font-medium hover:bg-rd rounded"
             >
               ABOUT

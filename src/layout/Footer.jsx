@@ -101,7 +101,7 @@ const Footer = () => {
               </li>
               <li className="mb-2">
                 <a
-                  href="/about-us"
+                  href="#about"
                   className="hover:text-yellow-500 transition duration-300 text-xl"
                 >
                   About Us
