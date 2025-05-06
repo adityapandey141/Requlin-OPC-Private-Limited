@@ -90,10 +90,10 @@ const Header = () => {
             </Link>
             <div className="relative group">
               <Link
-                href="/course"
+                href="/Services"
                 className="py-4 px-6 font-medium hover:bg-rd flex items-center rounded"
               >
-                OUR COURSES
+                SERVICES
               </Link>
             </div>
 

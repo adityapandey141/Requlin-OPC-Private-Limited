@@ -109,10 +109,10 @@ const Footer = () => {
               </li>
               <li className="mb-2">
                 <a
-                  href="/course"
+                  href="/Services"
                   className="hover:text-yellow-500 transition duration-300 text-xl"
                 >
-                  Our Courses
+                  Services
                 </a>
               </li>
               <li className="mb-2">

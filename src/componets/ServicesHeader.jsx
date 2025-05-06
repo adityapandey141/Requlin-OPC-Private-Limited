@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { ArrowRight, Globe } from 'lucide-react';
 import ContactBannerimg from "../assets/ContactBannerimg.jpg";
 
-const CoursesHeader = () => {
+const ServicesHeader = () => {
   return (
     <section
       className="w-full bg-cover bg-center bg-no-repeat"
@@ -17,11 +17,11 @@ const CoursesHeader = () => {
          
             <div className="mb-8 md:mb-0">
               <h2 className="text-4xl md:text-5xl font-bold text-slate-800 mb-4">
-                OUR COURSES
+              Services
               </h2>
               <p className="text-slate-600 max-w-lg">
-              At Regulin Web, we offer practical, industry-ready courses in to help you build real-world skills and launch a successful tech career.
-              </p>
+               Our team is ready to help, reach out and we’ll respond promptly.           
+               </p>
             </div>
           </div>
         </div>
@@ -30,4 +30,4 @@ const CoursesHeader = () => {
   );
 };
 
-export default CoursesHeader;
+export default ServicesHeader;
