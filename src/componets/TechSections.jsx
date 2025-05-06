@@ -106,9 +106,9 @@ const TechSections = () => {
 
               <div className="p-3 text-center">
                 <h3 className="font-bold text-lg text-gray-800">
-                  {teacher.name}
+                  {teacher.title}
                 </h3>
-                <p className="text-gray-500 mb-2">{teacher.title}</p>
+                {/* <p className="text-gray-500 mb-2">{teacher.title}</p> */}
 
                 <p className="text-gray-600 text-sm mb-6">
                   {teacher.description}
