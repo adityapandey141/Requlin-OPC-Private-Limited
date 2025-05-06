@@ -68,7 +68,7 @@ const ContactForm = () => {
 
   return (
     <section className="w-full max-w-6xl mx-auto px-4 py-16">
-      {/* Title and Heading */}
+      
       <div className="text-center mb-8">
         <h2 className="text-4xl font-bold text-slate-800">Get In Touch</h2>
         <p className="text-xl text-slate-600 mt-2">
@@ -78,7 +78,7 @@ const ContactForm = () => {
 
       <form onSubmit={handleSubmit}>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {/* First Name */}
+         
           <div className="relative">
             <input
               type="text"
@@ -92,7 +92,7 @@ const ContactForm = () => {
             {errors.firstName && <p className="text-red-500 text-xs mt-1">{errors.firstName}</p>}
           </div>
 
-          {/* Last Name */}
+        
           <div className="relative">
             <input
               type="text"
@@ -106,7 +106,7 @@ const ContactForm = () => {
             {errors.lastName && <p className="text-red-500 text-xs mt-1">{errors.lastName}</p>}
           </div>
 
-          {/* Company */}
+         
           <div className="relative">
             <input
               type="text"
@@ -119,7 +119,7 @@ const ContactForm = () => {
             />
           </div>
 
-          {/* Phone Number */}
+
           <div className="relative">
             <input
               type="tel"
@@ -133,7 +133,7 @@ const ContactForm = () => {
             {errors.phoneNumber && <p className="text-red-500 text-xs mt-1">{errors.phoneNumber}</p>}
           </div>
 
-          {/* Business Email */}
+       
           <div className="relative">
             <input
               type="email"
@@ -147,7 +147,7 @@ const ContactForm = () => {
             {errors.businessEmail && <p className="text-red-500 text-xs mt-1">{errors.businessEmail}</p>}
           </div>
 
-          {/* Job Title */}
+        
           <div className="relative">
             <input
               type="text"
@@ -161,12 +161,11 @@ const ContactForm = () => {
           </div>
         </div>
 
-        {/* Submit Button */}
         <div className="mt-10 text-center">
           <button
             type="submit"
             disabled={isSubmitting}
-            className="bg-orange-500 hover:bg-orange-600 text-white font-medium py-3 px-8 uppercase transition-colors duration-300"
+            className="bg-rd hover:bg-orange-600 text-white font-medium py-3 px-8 uppercase transition-colors duration-300"
           >
             {isSubmitting ? 'Submitting...' : 'Apply Now'}
           </button>

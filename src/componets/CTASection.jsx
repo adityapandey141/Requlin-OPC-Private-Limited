@@ -24,7 +24,7 @@ const CTASection = () => {
           </h2>
 
           <Link href="/contact-us">
-            <button className="mt-6 bg-[#F0B100] text-white px-6 py-3 rounded-lg text-lg font-medium shadow-md hover:bg-[#D18700] transition-all">
+            <button className="mt-6 bg-rd text-white px-6 py-3 rounded-lg text-lg font-medium shadow-md hover:bg-[#D18700] transition-all">
             Reach Out Today
             </button>
             </Link>

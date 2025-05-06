@@ -12,3 +12,6 @@
 #herosection2 {
   z-index: 10 !important;
 }
+html,body{
+  scroll-behavior: smooth !important;
+}

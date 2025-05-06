@@ -10,7 +10,7 @@ const SolutionItem = ({ heading, text, isOpen, onClick }) => {
         onClick={onClick}
       >
         <div className="flex d-flex items-start gap-3   content-center  align-center items-center">
-          <div className="bg-green-600 rounded-full p-2 mt-1">
+          <div className="bg-lbl rounded-full p-2 mt-1">
             <div className="w-6 h-6 flex items-center justify-center text-gray-100">
               ?
             </div>

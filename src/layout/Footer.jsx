@@ -60,12 +60,12 @@ const Footer = () => {
             <div className="space-y-2">
               <div className="flex items-center mb-3 md:mb-4">
                 <FaPhoneAlt
-                  className=" text-yellow-500 mr-2 flex-shrink-0"
+                  className=" text-rd mr-2 flex-shrink-0"
                   size={28}
                 />
                 <a
                   href="+91 7550240992"
-                  className="text-[#ffffff] hover:text-yellow-500  text-lg transition-colors"
+                  className="text-white hover:text-yellow-500  text-lg transition-colors"
                 >
                   +91 7550240992
                 </a>
@@ -73,7 +73,7 @@ const Footer = () => {
 
               <div className="flex items-center mb-3 md:mb-4">
                 <MdEmail
-                  className="text-yellow-500 mr-2 flex-shrink-0"
+                  className="text-rd mr-2 flex-shrink-0"
                   size={28}
                 />
                 <a

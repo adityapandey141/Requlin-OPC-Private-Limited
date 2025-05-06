@@ -82,12 +82,12 @@ const Header = () => {
             >
               HOME
             </Link>
-            <Link
-              href="#about"
+            <a
+              href="/#about"
               className="py-4 px-6 font-medium hover:bg-rd rounded"
             >
               ABOUT
-            </Link>
+            </a>
             <div className="relative group">
               <Link
                 href="/Services"

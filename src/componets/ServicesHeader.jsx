@@ -20,7 +20,7 @@ const ServicesHeader = () => {
               Services
               </h2>
               <p className="text-slate-600 max-w-lg">
-               Our team is ready to help, reach out and we’ll respond promptly.           
+              That Support Every Stage of Clinical Research.           
                </p>
             </div>
           </div>
