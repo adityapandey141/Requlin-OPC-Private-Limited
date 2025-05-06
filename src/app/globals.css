@@ -1,10 +1,14 @@
 @import "tailwindcss";
 
-
-#herosection{
-    z-index: 0 !important;
+@theme {
+  --color-rd: #953325;
+  --color-bl: #194ac4;
+  --color-lbl: #194ac4ba;
+}
+#herosection {
+  z-index: 0 !important;
 }
 
-#herosection2{
-    z-index: 10 !important;
+#herosection2 {
+  z-index: 10 !important;
 }
