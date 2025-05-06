@@ -20,7 +20,7 @@ const ContactHeader = () => {
                 CONTACT US
               </h2>
               <p className="text-slate-600 max-w-lg">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              Our team is ready to help, reach out and we’ll respond promptly.
               </p>
             </div>
           </div>

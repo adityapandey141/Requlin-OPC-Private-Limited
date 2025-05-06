@@ -8,7 +8,7 @@ import teacher3 from "../assets/teacher3.jpg";
 import teacher4 from "../assets/teacher4.jpg";
 import teacher5 from "../assets/teacher5.jpg";
 import teacher6 from "../assets/teacher6.jpg";
-import teacher7 from "../assets/teacher7.jpg";
+
 
 const teachers = [
   {
@@ -59,14 +59,6 @@ const teachers = [
     description:
       "Get hands-on experience with SAS programming, CDISC standards, statistical reporting, and clinical data analysis for regulatory submissions.",
   },
-  {
-    id: 7,
-    name: "BRUNO ACSELRAD",
-    title: "Diploma in Medical Coding",
-    image: teacher7,
-    description:
-      "Become fluent in ICD, CPT, and HCPCS coding systems used in trials, insurance claims, and medical documentation. Ideal for medical coders and healthcare professionals.",
-  },
 ];
 
 const TechSections = () => {
@@ -84,7 +76,7 @@ const TechSections = () => {
           </h1>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-4">
           {teachers.map((teacher) => (
             <div
               key={teacher.id}

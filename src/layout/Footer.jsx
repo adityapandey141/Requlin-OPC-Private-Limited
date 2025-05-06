@@ -21,8 +21,7 @@ const Footer = () => {
               />
             </div>
             <p className="text-white text-lg font-semibold mb-4">
-              From cups to bowls - practical packaging for real business needs.
-              Let&apos;s talk about yours.
+            Driving clinical research forward with reliable support and real-world expertise.
             </p>
             <div className="flex space-x-3">
               <a

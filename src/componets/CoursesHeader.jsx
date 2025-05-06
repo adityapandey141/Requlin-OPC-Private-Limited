@@ -19,7 +19,7 @@ const CoursesHeader = () => {
               <h2 className="text-4xl md:text-5xl font-bold text-slate-800 mb-4">
                 OUR COURSES
               </h2>
-              <p className="text-slate-600 text-xl max-w-lg">
+              <p className="text-slate-600 max-w-lg">
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
               </p>
             </div>
