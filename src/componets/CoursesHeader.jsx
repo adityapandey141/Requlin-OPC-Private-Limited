@@ -20,7 +20,7 @@ const CoursesHeader = () => {
                 OUR COURSES
               </h2>
               <p className="text-slate-600 max-w-lg">
-              Our team is ready to help, reach out and we’ll respond promptly.
+              At Regulin Web, we offer practical, industry-ready courses in to help you build real-world skills and launch a successful tech career.
               </p>
             </div>
           </div>
