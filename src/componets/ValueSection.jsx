@@ -39,7 +39,7 @@ const ValueSection = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start text-center relative">
-          {values.map((value, index) => (
+          {values.map((value,) => (
             <div key={value.id} className="flex flex-col items-center">
               <div className="relative">
                 <div className={`w-32 h-32 rounded-full ${value.bgColor} flex items-center justify-center`}>

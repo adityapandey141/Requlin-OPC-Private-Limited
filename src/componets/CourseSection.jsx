@@ -1,13 +1,13 @@
 "use client";
 import React from "react";
-import Link from "next/link";
+
 import Image from "next/image";
 
 import eventimg1 from "../assets/eventimg1.jpg";
 import eventimg2 from "../assets/eventimg2.jpg";
 import eventimg3 from "../assets/eventimg3.jpg";
 
-const NewsCard = ({ image, title, link }) => {
+const NewsCard = ({ image, title }) => {
   return (
     <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
       <div className="relative w-full aspect-[16/9] sm:aspect-[4/3]">
@@ -32,17 +32,17 @@ const CourseSection = () => {
     {
       image: eventimg1,
       title: "Diploma in Pharmacovigilance",
-      link: "",
+
     },
     {
       image: eventimg2,
       title: "Diploma in Clinical SAS",
-      link: "",
+ 
     },
     {
       image: eventimg3,
       title: "Diploma in Medical Coding",
-      link: "",
+  
     },
   ];
 
@@ -62,7 +62,7 @@ const CourseSection = () => {
               key={index}
               image={item.image}
               title={item.title}
-              link={item.link}
+       
             />
           ))}
         </div>

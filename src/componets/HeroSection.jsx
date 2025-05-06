@@ -11,7 +11,7 @@ import ApplyOnline from '../assets/ApplyOnline.png';
 import ProspectsIco from '../assets/ProspectsIco.png';
 import CertificationIco from '../assets/CertificationIco.png';
 
-const BannerContent = ({ title, text, buttons, textColor = 'text-white', centered = false }) => (
+const BannerContent = ({ title, text, textColor = 'text-white', centered = false }) => (
   <div className={`max-w-6xl ${title === 'Clinical Trials' ? 'px-6 sm:px-10 md:px-20 lg:px-[200px]' : 'px-6 sm:px-10 lg:px-20'}`}>
     <div className={`${textColor} ${centered ? 'mx-auto max-w-5xl text-center' : ''}`}>
       <p className="text-base sm:text-lg md:text-3xl font-medium mb-4">EXPLORE THE WORLD OF</p>
