@@ -12,7 +12,7 @@ const Footer = () => {
   ];
   return (
     <footer className=" w-full  text-black md:mt-[-150px] ">
-      <div className="w-full pt-25  bg-gradient-to-r from-green-50 via-yellow-50 to-purple-50 bg-opacity-70">
+      <div className="w-full pt-3 md:pt-25  bg-gradient-to-r from-green-50 via-yellow-50 to-purple-50 bg-opacity-70">
         <div className="container mx-auto  md:px-4 mt-15 md:mt-[100px] ">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10">
             <div className="flex flex-col items-start">
