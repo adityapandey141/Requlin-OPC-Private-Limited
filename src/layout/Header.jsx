@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { Search } from "lucide-react";
 import Image from "next/image";
-import RequlinLogo from "../assets/RequlinLogo.png";
+import RequlinLogo from "../assets/logo.png";
 
 const Header = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -20,10 +20,14 @@ const Header = () => {
 
   return (
     <header className="w-full">
-      <div className="bg-white py-3 md:py-4">
+      <div className="bg-white py-2 md:py-2">
         <div className="max-w-7xl mx-auto flex justify-between items-center px-2 sm:px-2 md:px-0">
           <Link href="/" className="flex items-center">
-            <Image src={RequlinLogo} alt="Logo" className="object-contain " />
+            <Image
+              src={RequlinLogo}
+              alt="Logo"
+              className="object-contain w-[40%]"
+            />
           </Link>
 
           <button
@@ -73,7 +77,7 @@ const Header = () => {
         </div>
       </div>
 
-      <nav className="bg-bl text-white py-4 ">
+      <nav className="bg-bl text-white  ">
         <div className="max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-2 md:px-0">
           <div className="flex space-x-4 md:space-x-6 hidden md:flex">
             <Link
@@ -90,7 +94,7 @@ const Header = () => {
             </a>
             <div className="relative group">
               <Link
-                href="/Services"
+                href="/services"
                 className="py-4 px-6 font-medium hover:bg-rd flex items-center rounded"
               >
                 SERVICES
@@ -98,7 +102,7 @@ const Header = () => {
             </div>
 
             <Link
-              href="/contact-us"
+              href="/contact"
               className="py-4 px-6 font-medium hover:bg-rd rounded"
             >
               CONTACT
@@ -144,7 +148,7 @@ const Header = () => {
           </Link>
 
           <Link
-            href="/contact-us"
+            href="/contact"
             className="block py-4 px-6 text-white hover:bg-rd"
           >
             CONTACT
