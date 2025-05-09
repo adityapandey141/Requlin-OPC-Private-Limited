@@ -31,8 +31,8 @@ const BannerContent = ({
       }`}
     >
       {/* <p className="text-base sm:text-lg md:text-3xl font-medium mb-4">EXPLORE THE WORLD OF</p> */}
-      <h1 className="text-lg sm:text-xl md:text-8xl font-bold mb-4">{title}</h1>
-      <p className="text-sm sm:text-base md:text-2xl mb-6">{text}</p>
+      <h1 className="text-5xl  md:text-8xl font-bold mb-4">{title}</h1>
+      <p className="text-xl md:text-2xl mb-6">{text}</p>
       <div
         className={`flex flex-wrap gap-4 ${
           centered ? "justify-center" : "justify-start"

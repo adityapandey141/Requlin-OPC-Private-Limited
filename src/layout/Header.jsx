@@ -125,32 +125,27 @@ const Header = () => {
         </div>
 
         <div
-          className={`md:hidden ${
-            isMobileMenuOpen ? "block" : "hidden"
-          } bg-green-600`}
+          className={`md:hidden ${isMobileMenuOpen ? "block" : "hidden"} bg-bl`}
         >
-          <Link
-            href="/"
-            className="block py-4 px-6 text-white hover:bg-green-700"
-          >
+          <Link href="/" className="block py-4 px-6 text-white hover:bg-rd">
             HOME
           </Link>
           <Link
             href="/about-us"
-            className="block py-4 px-6 text-white hover:bg-green-700"
+            className="block py-4 px-6 text-white hover:bg-rd"
           >
             ABOUT
           </Link>
           <Link
             href="/course"
-            className="block py-4 px-6 text-white hover:bg-green-700"
+            className="block py-4 px-6 text-white hover:bg-rd"
           >
             OUR COURSES
           </Link>
 
           <Link
             href="/contact-us"
-            className="block py-4 px-6 text-white hover:bg-green-700"
+            className="block py-4 px-6 text-white hover:bg-rd"
           >
             CONTACT
           </Link>

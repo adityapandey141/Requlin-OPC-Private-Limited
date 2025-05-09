@@ -12,6 +12,17 @@
 #herosection2 {
   z-index: 10 !important;
 }
-html,body{
+html,
+body {
   scroll-behavior: smooth !important;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
 }
