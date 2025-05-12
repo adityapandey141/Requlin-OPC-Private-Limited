@@ -166,14 +166,14 @@ const HeroSection = () => {
             {features.map((feature, index) => (
               <div
                 key={index}
-                className={`${feature.bgColor} text-white p-6 sm:p-8 md:p-10 flex items-center rounded-md shadow-lg`}
+                className={`${feature.bgColor} text-white p-6 sm:p-8 md:p-6 flex items-center rounded-md shadow-lg`}
               >
                 <div className="mr-4 sm:mr-6 shrink-0">
                   <Image
                     src={feature.icon}
                     alt={feature.alt}
-                    width={80}
-                    height={80}
+                    width={70}
+                    height={70}
                   />
                 </div>
                 <div>

@@ -53,7 +53,7 @@ const Header = () => {
 
           <div className="hidden md:flex space-x-16">
             <div className="text-center">
-              <p className="text-gray-500 text-xs sm:text-lg">EMAIL</p>
+              <p className="text-gray-500 text-xs sm:text-lg">Email</p>
               <a
                 href="mailto:requlinresearch@gmail.com"
                 className="text-gray-700 text-xs sm:text-base font-semibold"
@@ -62,7 +62,7 @@ const Header = () => {
               </a>
             </div>
             <div className="text-center">
-              <p className="text-gray-500 text-xs sm:text-lg">TOLL FREE</p>
+              <p className="text-gray-500 text-xs sm:text-lg">Call Us</p>
               <p className="text-gray-700 text-xs sm:text-base font-semibold">
                 +91 7550240992
               </p>
