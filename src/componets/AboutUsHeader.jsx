@@ -19,7 +19,7 @@ const AboutUsHeader = () => {
                   <h2 className="text-4xl md:text-5xl font-bold text-black mb-4">
                    ABOUT US
                   </h2>
-                  <p className="text-slate-600 max-w-lg">
+                  <p className="text-slate-700 max-w-lg">
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
               </p>
                 </div>
