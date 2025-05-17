@@ -1,28 +1,28 @@
 'use client';
 import React from 'react';
-import courcesbg from "../assets/courcesbg.jpg"; 
-import courseimg1 from "../assets/courseimg1.jpg";
-import courseimg2 from "../assets/courseimg2.jpg";
-import courseimg3 from "../assets/courseimg3.jpg";
-import courseimg4 from "../assets/courseimg4.jpg";
+import OurClients from "../assets/OurClients.png"; 
+import ResearchSponsors from "../assets/ResearchSponsors.jpg";
+import ContractResearchOrganizations  from "../assets/ContractResearchOrganizations.jpg";
+import ResearchSites from "../assets/ResearchSites.jpg";
+import ResearchParticipants from "../assets/ResearchParticipants.jpg";
 
 const WhoWeServe = () => {
   const programs = [
     {
       title: "Research Sponsors",
-      image: courseimg1, 
+      image: ResearchSponsors, 
     },
     {
       title: "Contract Research Organizations (CROs)",
-      image: courseimg2, 
+      image: ContractResearchOrganizations , 
     },
     {
       title: "Research Sites",
-      image: courseimg3, 
+      image: ResearchSites, 
     },
     {
       title: "Research Participants",
-      image: courseimg4, 
+      image: ResearchParticipants, 
     }
   ];
 
@@ -31,9 +31,9 @@ const WhoWeServe = () => {
       <div
         className="relative py-16 px-4 sm:px-6 lg:px-8 bg-cover bg-center"
         style={{
-          backgroundImage: `url(${courcesbg.src})`,
+          backgroundImage: `url(${OurClients.src})`,
           backgroundBlendMode: "multiply",
-          backgroundColor: "rgba(0,0,0,0.6)"
+          backgroundColor: "rgba(0,0,0,0.4)"
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-black/50 to-black/50"></div>

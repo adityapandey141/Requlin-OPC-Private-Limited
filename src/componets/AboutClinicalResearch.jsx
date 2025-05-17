@@ -3,28 +3,28 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
-import Blogimg1 from "../assets/Blogimg1.jpg";
-import Blogimg2 from "../assets/Blogimg2.jpg";
-import Blogimg3 from "../assets/Blogimg3.jpg";
+import WhatisClinicalResearch from "../assets/WhatisClinicalResearch.png";
+import WeWalkBesideYouinEveryStepofClinicalResearch from "../assets/WeWalkBesideYouinEveryStepofClinicalResearch.png";
+import ScopeofClinicalResearch from "../assets/ScopeofClinicalResearch.png";
 
 const blogPosts = [
   {
     id: 1,
     title: 'What is Clinical Research?',
     excerpt: 'Clinical research involves systematic investigations to evaluate the safety and efficacy of medical interventions, contributing to evidence-based medicine.',
-    image: Blogimg1,
+    image: WhatisClinicalResearch,
   },
   {
     id: 2,
     title: 'Players in Clinical Research',
     excerpt: 'Key stakeholders include sponsors, CROs, research sites, investigators, and participants, each playing a vital role in the research continuum.',
-    image: Blogimg2,
+    image: WeWalkBesideYouinEveryStepofClinicalResearch,
   },
   {
     id: 3,
     title: 'Scope of Clinical Research',
     excerpt: 'The field covers various phases of trials, regulatory compliance, data management, and post-marketing surveillance, offering diverse career opportunities.',
-    image: Blogimg3,
+    image: ScopeofClinicalResearch,
   },
 ];
 

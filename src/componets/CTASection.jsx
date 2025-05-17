@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import CTAimage from "../assets/CTA.jpeg";
+import JOINUS from "../assets/JOINUS.png";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -23,7 +23,7 @@ const CTASection = () => {
             people-focused?
           </h2>
 
-          <Link href="/contact-us">
+          <Link href="/contact">
             <button className="mt-6 bg-rd text-white px-6 py-3 rounded-lg text-lg font-medium shadow-md hover:bg-[#D18700] transition-all">
             Reach Out Today
             </button>
@@ -32,7 +32,7 @@ const CTASection = () => {
 
         <div className="w-full md:w-1/2 flex justify-center">
           <Image
-            src={CTAimage}
+            src={JOINUS}
             alt="Business Innovation"
             width={500}
             height={350}

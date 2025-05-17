@@ -3,13 +3,13 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import Link from "next/link";
 
-import banner1 from "../assets/banner1.jpg";
-import banner2 from "../assets/banner2.jpg";
-import banner3 from "../assets/banner3.jpg";
+import IndustryRelevantCourse from "../assets/IndustryRelevantCourse.jpg";
+import CustomisedSolutions from "../assets/CustomisedSolutions.jpg";
+import ClinicalTrials from "../assets/ClinicalTrials.jpg";
 
-import ApplyOnline from "../assets/ApplyOnline.png";
-import ProspectsIco from "../assets/ProspectsIco.png";
-import CertificationIco from "../assets/CertificationIco.png";
+import FeasibilityAssessment1 from "../assets/FeasibilityAssessment1.png";
+import PatientRecruitment1 from "../assets/PatientRecruitment1.png";
+import linicalperation from "../assets/linicalperation.png";
 
 const BannerContent = ({
   title,
@@ -63,7 +63,7 @@ const HeroSection = () => {
 
   const banners = [
     {
-      image: banner2,
+      image: CustomisedSolutions,
       title: "Customised Solutions",
       text: "Practical Solutions that Move Clinical Research Forward",
       centered: true,
@@ -71,7 +71,7 @@ const HeroSection = () => {
       buttons: [{ label: "Explore" }, { label: "Connect" }],
     },
     {
-      image: banner3,
+      image: ClinicalTrials,
       title: "Clinical Trials",
       text: "Comprehensive services for clinical excellence",
       centered: true,
@@ -79,7 +79,7 @@ const HeroSection = () => {
       buttons: [{ label: "View All" }],
     },
     {
-      image: banner1,
+      image: IndustryRelevantCourse,
       title: "Industry-Relevant Courses",
       centered: true,
       text: "Advancing careers in clinical research with the skills needed in today's landscape",
@@ -94,7 +94,7 @@ const HeroSection = () => {
       description:
         "In-depth analyses to determine the viability of clinical trials, ensuring optimal site selection and resource allocation.",
       bgColor: "bg-orange-500",
-      icon: ApplyOnline,
+      icon: FeasibilityAssessment1,
       alt: "Apply icon",
     },
     {
@@ -102,7 +102,7 @@ const HeroSection = () => {
       description:
         "Implement strategic patient recruitment plans to enhance enrollment rates, focusing on patient engagement.",
       bgColor: "bg-blue-500",
-      icon: ProspectsIco,
+      icon: PatientRecruitment1,
       alt: "Prospects icon",
     },
     {
@@ -110,7 +110,7 @@ const HeroSection = () => {
       description:
         "Our team ensures seamless trial execution, maintaining compliance with regulatory standards and timelines.",
       bgColor: "bg-yellow-500",
-      icon: CertificationIco,
+      icon: linicalperation,
       alt: "Certification icon",
     },
   ];

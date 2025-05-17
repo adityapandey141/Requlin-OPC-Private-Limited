@@ -1,8 +1,7 @@
 import React from "react";
 import HeroSection from "../componets/HeroSection";
 import AboutUS from "@/componets/AboutUS";
-import ValueSection from "@/componets/ValueSection";
-import SolutionsSection from "@/componets/SolutionsSection";
+
 import WhoWeServe from "@/componets/WhoWeServe";
 import CourseSection from "@/componets/CourseSection";
 import TherapeuticAreas from "@/componets/TherapeuticAreas";
@@ -14,8 +13,7 @@ const page = () => {
     <div>
       <HeroSection />
       <AboutUS />
-      {/* <ValueSection/> */}
-      {/* <SolutionsSection /> */}
+     
       <WhoWeServe />
       <CourseSection />
       <TherapeuticAreas />

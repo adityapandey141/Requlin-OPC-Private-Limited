@@ -3,9 +3,9 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-import eventimg1 from "../assets/eventimg1.jpg";
-import eventimg2 from "../assets/eventimg2.jpg";
-import eventimg3 from "../assets/eventimg3.jpg";
+import DiplomainPharmacovigilance from "../assets/DiplomainPharmacovigilance.jpg";
+import DiplomainClinicalSAS from "../assets/DiplomainClinicalSAS.jpg";
+import DiplomainMedicalCoding from "../assets/DiplomainMedicalCoding.jpg";
 
 const NewsCard = ({ image, title, link }) => {
   return (
@@ -30,17 +30,17 @@ const NewsCard = ({ image, title, link }) => {
 const CourseSection = () => {
   const newsItems = [
     {
-      image: eventimg1,
+      image:DiplomainPharmacovigilance,
       title: "Diploma in Pharmacovigilance",
       link: "",
     },
     {
-      image: eventimg2,
+      image:DiplomainClinicalSAS,
       title: "Diploma in Clinical SAS",
       link: "",
     },
     {
-      image: eventimg3,
+      image: DiplomainMedicalCoding,
       title: "Diploma in Medical Coding",
       link: "",
     },

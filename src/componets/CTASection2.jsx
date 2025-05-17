@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import CTAimage from "../assets/CTA.jpeg";
+import LetsTalkAboutYourGoals from "../assets/LetsTalkAboutYourGoals.png";
 
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -25,7 +25,7 @@ const CTASection2 = () => {
               Whether you’re managing trials, running a research site, or building your clinical career.
           </h2>
 
-          <Link href="/contact-us">
+          <Link href="/contact">
             <button className="mt-6 bg-rd text-white px-6 py-3 rounded-lg text-lg font-medium shadow-md hover:bg-[#D18700] transition-all">
             Reach Out Today
             </button>
@@ -34,7 +34,7 @@ const CTASection2 = () => {
 
         <div className="w-full md:w-1/2 flex justify-center">
           <Image
-            src={CTAimage}
+            src={LetsTalkAboutYourGoals}
             alt="Business Innovation"
             width={500}
             height={350}
