@@ -17,7 +17,8 @@ const Footer = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10">
             <div className="flex flex-col items-start">
               <div className="grid grid-cols-1 gap-4 md:items-center mb-5 md:mb-12">
-                <Image src={RequlinLogo} className="w-[30%]" />
+                <Image src={RequlinLogo} 
+                className="w-[30%]" />
 
                 <p className="">
                   Driving clinical research forward with reliable support and

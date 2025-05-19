@@ -3,10 +3,10 @@ import React from "react";
 import Image from "next/image";
 import DiverseTherapeuticSpecialisations from "../assets/DiverseTherapeuticSpecialisations.png";
 
-// Import icon images
+
 import Oncology from "../assets/Oncology.png";
 import CentralNervousSystem from "../assets/CentralNervousSystem.png";
-import Cardiovascular from "../assets/cardiovascular.png";
+import Cardscular from "../assets/Cardscular.png";
 import Metabolic from "../assets/Metabolic.png";
 import InfectiousDisease from "../assets/InfectiousDisease.png";
 import Dermatology from "../assets/Dermatology.png";
@@ -16,7 +16,7 @@ import Gastroenterology from "../assets/Gastroenterology.png";
 const subheadings = [
   { title: "Oncology", icon:Oncology },
   { title: "Central Nervous System", icon: CentralNervousSystem },
-  { title: "Cardiovascular", icon: Cardiovascular },
+  { title: "Cardiovascular", icon:Cardscular },
   { title: "Metabolic", icon: Metabolic },
   { title: "Infectious Disease", icon: InfectiousDisease },
   { title: "Dermatology", icon: Dermatology },
