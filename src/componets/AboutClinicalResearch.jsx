@@ -4,7 +4,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 import WhatisClinicalResearch from "../assets/WhatisClinicalResearch.png";
-import WeWalkClinicalResearch from "../assets/WeWalkClinicalResearch.jpg";
+import WeWalkClinicalResearch from "../assets/WeWalkClinicalResearch.png";
 import ScopeofClinicalResearch from "../assets/ScopeofClinicalResearch.png";
 
 const blogPosts = [

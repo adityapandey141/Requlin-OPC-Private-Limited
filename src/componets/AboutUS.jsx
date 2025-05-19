@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { Play } from "lucide-react";
-import WeWalkClinicalResearch from "../assets/WeWalkClinicalResearch.jpg";
+import WeWalkClinicalResearch from "../assets/WeWalkClinicalResearch.png";
 
 const AboutUS = () => {
   return (
