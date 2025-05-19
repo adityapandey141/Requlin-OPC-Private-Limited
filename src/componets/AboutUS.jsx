@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { Play } from "lucide-react";
-import WeWalkBesideYouinEveryStepofClinicalResearch from "../assets/WeWalkBesideYouinEveryStepofClinicalResearch.png";
+import WeWalkClinicalResearch from "../assets/WeWalkClinicalResearch.jpg";
 
 const AboutUS = () => {
   return (
@@ -10,7 +10,7 @@ const AboutUS = () => {
         <div className="sm:w-1/2 relative">
           <div className="relative w-full h-64 sm:h-auto aspect-video">
             <Image
-              src={WeWalkBesideYouinEveryStepofClinicalResearch}
+              src={WeWalkClinicalResearch}
               alt="Students studying in library"
               layout="fill"
               objectFit="cover"

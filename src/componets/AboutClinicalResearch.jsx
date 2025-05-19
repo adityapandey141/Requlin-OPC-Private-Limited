@@ -4,7 +4,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 import WhatisClinicalResearch from "../assets/WhatisClinicalResearch.png";
-import WeWalkBesideYouinEveryStepofClinicalResearch from "../assets/WeWalkBesideYouinEveryStepofClinicalResearch.png";
+import WeWalkClinicalResearch from "../assets/WeWalkClinicalResearch.jpg";
 import ScopeofClinicalResearch from "../assets/ScopeofClinicalResearch.png";
 
 const blogPosts = [
@@ -18,7 +18,7 @@ const blogPosts = [
     id: 2,
     title: 'Players in Clinical Research',
     excerpt: 'Key stakeholders include sponsors, CROs, research sites, investigators, and participants, each playing a vital role in the research continuum.',
-    image: WeWalkBesideYouinEveryStepofClinicalResearch,
+    image: WeWalkClinicalResearch,
   },
   {
     id: 3,
