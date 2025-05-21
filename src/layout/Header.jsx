@@ -6,17 +6,34 @@ import Image from "next/image";
 import RequlinLogo from "../assets/logo.png";
 
 const Header = () => {
-  const [searchQuery, setSearchQuery] = useState("");
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  // const [searchQuery, setSearchQuery] = useState("");
+  // const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  const handleSearch = (e) => {
-    e.preventDefault();
-    console.log("Searching for:", searchQuery);
+  // const handleSearch = (e) => {
+  //   e.preventDefault();
+  //   console.log("Searching for:", searchQuery);
+  // };
+
+  // const toggleMobileMenu = () => {
+  //   setIsMobileMenuOpen((prev) => !prev);
+  // };
+
+  const [sidebar, setSidebar] = useState(false);
+
+  const toggleSidebar = () => {
+    console.log(sidebar);
+    if (sidebar) {
+      return setSidebar(false);
+    }
+    return setSidebar(true);
   };
 
-  const toggleMobileMenu = () => {
-    setIsMobileMenuOpen((prev) => !prev);
-  };
+  const navItems = [
+    { name: "Home", url: "/" },
+    { name: "About", url: "/#about" },
+    { name: "Services", url: "/services" },
+    { name: "Contact", url: "/contact" },
+  ];
 
   return (
     <header className="w-full">
@@ -32,7 +49,7 @@ const Header = () => {
 
           <button
             className="md:hidden text-white"
-            onClick={toggleMobileMenu}
+            onClick={toggleSidebar}
             aria-label="Toggle mobile menu"
           >
             <svg
@@ -127,34 +144,70 @@ const Header = () => {
             </form>
           </div> */}
         </div>
-
-        <div
-          className={`md:hidden ${isMobileMenuOpen ? "block" : "hidden"} bg-bl`}
-        >
-          <Link href="/" className="block py-4 px-6 text-white hover:bg-rd">
-            HOME
-          </Link>
-          <Link
-            href="/about-us"
-            className="block py-4 px-6 text-white hover:bg-rd"
-          >
-            ABOUT
-          </Link>
-          <Link
-            href="/course"
-            className="block py-4 px-6 text-white hover:bg-rd"
-          >
-            OUR COURSES
-          </Link>
-
-          <Link
-            href="/contact"
-            className="block py-4 px-6 text-white hover:bg-rd"
-          >
-            CONTACT
-          </Link>
-        </div>
       </nav>
+
+      <div
+        id="mobile-menu"
+        className={`${
+          sidebar ? "translate-x-0" : "translate-x-full"
+        } fixed top-0 right-0 w-70 h-full bg-bl text-white z-40 transform  transition duration-300 ease-in-out md:hidden`}
+      >
+        <div className="p-4 h-full ">
+          <div className="flex justify-end ">
+            <button onClick={toggleSidebar} className="text-white">
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M6 18L18 6M6 6l12 12"
+                ></path>
+              </svg>
+            </button>
+          </div>
+
+          {/* <div className="mt-4 mb-8 text-center">
+            <img src={RequlinLogo} alt="Logo" className=" w-40 mb-2" />
+          </div>
+          <div className="mt-5 border-t-1 pt-5"></div> */}
+          <div className="flex flex-col space-y-5 mt-20">
+            {navItems.map((item, index) =>
+              item.url.startsWith("/#") ? (
+                <a key={index} href={item.url} onClick={toggleSidebar}>
+                  {item.name}
+                </a>
+              ) : (
+                <Link key={index} href={item.url} onClick={toggleSidebar}>
+                  {item.name}
+                </Link>
+              )
+            )}
+          </div>
+          <div className="mt-5 border-t-1 pt-5">
+            <h1 className="text-md font-bold text-yel">
+              ReQuLin (OPC) Private Limited
+            </h1>
+            <p className="mt-3">
+              Driving clinical research forward with reliable support and
+              real-world expertise.
+            </p>
+          </div>
+          <div className="mt-8">
+            <a
+              href="tel:+917550240992"
+              className="block bg-[#6383aa] hover:bg-blue-600 text-white text-center font-medium px-4 py-2 rounded"
+            >
+              +91 7550240992
+            </a>
+          </div>
+        </div>
+      </div>
     </header>
   );
 };

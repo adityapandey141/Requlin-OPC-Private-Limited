@@ -158,7 +158,7 @@ const HeroSection = () => {
           </div>
         </section>
 
-        <div
+        {/* <div
           className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 mt-[50px] md:mt-[-100px] relative"
           id="herosection2"
         >
@@ -185,7 +185,7 @@ const HeroSection = () => {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
       </main>
     </div>
   );

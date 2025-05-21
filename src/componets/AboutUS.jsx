@@ -5,10 +5,10 @@ import WeWalkClinicalResearch from "../assets/WeWalkClinicalResearch.png";
 
 const AboutUS = () => {
   return (
-    <div className="max-w-7xl mx-auto px-4 py-12 md:px-6 lg:px-8"  id="about">
+    <div className="max-w-7xl mx-auto px-4 py-12 md:px-6 lg:px-8" id="about">
       <div className="flex flex-col sm:flex-row gap-8 items-center">
         <div className="sm:w-1/2 relative">
-          <div className="relative w-full h-64 sm:h-auto aspect-video">
+          <div className="relative md:w-full h-48 md:h-auto  aspect-video">
             <Image
               src={WeWalkClinicalResearch}
               alt="Students studying in library"

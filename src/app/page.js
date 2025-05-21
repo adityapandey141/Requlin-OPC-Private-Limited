@@ -13,9 +13,9 @@ const page = () => {
     <div>
       <HeroSection />
       <AboutUS />
-     
+
       <WhoWeServe />
-      <CourseSection />
+      {/* <CourseSection /> */}
       <TherapeuticAreas />
       <AboutClinicalResearch />
       <CTASection />

@@ -3,7 +3,6 @@ import React from "react";
 import Image from "next/image";
 import DiverseTherapeuticSpecialisations from "../assets/DiverseTherapeuticSpecialisations.png";
 
-
 import Oncology from "../assets/Oncology.png";
 import CentralNervousSystem from "../assets/CentralNervousSystem.png";
 import Cardscular from "../assets/Cardscular.png";
@@ -14,18 +13,18 @@ import Immunology from "../assets/Immunology.png";
 import Gastroenterology from "../assets/Gastroenterology.png";
 
 const subheadings = [
-  { title: "Oncology", icon:Oncology },
+  { title: "Oncology", icon: Oncology },
   { title: "Central Nervous System", icon: CentralNervousSystem },
-  { title: "Cardiovascular", icon:Cardscular },
+  { title: "Cardiovascular", icon: Cardscular },
   { title: "Metabolic", icon: Metabolic },
   { title: "Infectious Disease", icon: InfectiousDisease },
   { title: "Dermatology", icon: Dermatology },
   { title: "Immunology", icon: Immunology },
-  { title: "Gastroenterology", icon: Gastroenterology},
+  { title: "Gastroenterology", icon: Gastroenterology },
 ];
 
 const TherapeuticAreas = () => (
-  <section className="bg-lbl py-16 relative mb-[50px]">
+  <section className="bg-[#c3d4ffba] py-16 relative mb-[50px]">
     <div className="absolute inset-0 z-0">
       <Image
         src={DiverseTherapeuticSpecialisations}
@@ -38,8 +37,8 @@ const TherapeuticAreas = () => (
 
     <div className="max-w-7xl mx-auto px-4 relative z-10">
       <div className="text-center mb-12">
-        <h4 className="text-white text-xl mb-2">Areas of Expertise</h4>
-        <h1 className="text-white text-3xl font-bold">
+        <h4 className="text-black text-xl mb-2">Areas of Expertise</h4>
+        <h1 className="text-black text-3xl font-bold">
           Diverse Therapeutic Specialisations
         </h1>
       </div>

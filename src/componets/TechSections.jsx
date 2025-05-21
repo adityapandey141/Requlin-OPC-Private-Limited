@@ -2,13 +2,12 @@
 import { Twitter, Linkedin, Instagram } from "lucide-react";
 import { useState } from "react";
 import Image from "next/image";
-import teacher1 from "../assets/teacher1.jpg";
-import teacher2 from "../assets/teacher2.jpg";
-import teacher3 from "../assets/teacher3.jpg";
-import teacher4 from "../assets/teacher4.jpg";
-import teacher5 from "../assets/teacher5.jpg";
-import teacher6 from "../assets/teacher6.jpg";
-
+import teacher1 from "../assets/PG Diploma Artificial Intelligence in Clinical Research.jpg";
+import teacher2 from "../assets/Advanced PG Diploma in Clinical Research & Regulatory Affairs.jpg";
+import teacher3 from "../assets/Advanced Diploma in Clinical Research & Pharmacovigilance.jpg";
+import teacher4 from "../assets/Diploma in Pharmacovigilance.jpg";
+import teacher5 from "../assets/M.Sc. in Clinical Research.jpg";
+import teacher6 from "../assets/Diploma in Clinical SAS.jpg";
 
 const teachers = [
   {
@@ -77,59 +76,31 @@ const TechSections = () => {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-4">
-          {teachers.map((teacher) => (
-            <div
-              key={teacher.id}
-              className="bg-white rounded-lg overflow-hidden shadow-md transition-all duration-300 hover:shadow-xl"
-              onMouseEnter={() => setHoveredId(teacher.id)}
-              onMouseLeave={() => setHoveredId(null)}
-            >
-              <div className="relative">
-                <div className="overflow-hidden h-48 w-48 rounded-full mx-auto mt-6 mb-4 flex items-center justify-center">
-                  <Image
-                    src={teacher.image}
-                    alt={teacher.name}
-                    width={192}
-                    height={192}
-                    className="object-cover"
-                  />
-                </div>
-              </div>
-
-              <div className="p-3 text-center">
-                <h3 className="font-bold text-lg text-gray-800">
-                  {teacher.title}
-                </h3>
-                {/* <p className="text-gray-500 mb-2">{teacher.title}</p> */}
-
-                <p className="text-gray-600 text-sm mb-6">
-                  {teacher.description}
-                </p>
-
-                {/* <div className="flex justify-center space-x-3 pt-2">
-                  <a
-                    href="#"
-                    className="p-2 bg-blue-400 text-white rounded-full hover:bg-blue-500 transition-colors"
-                  >
-                    <Twitter size={18} />
-                  </a>
-                  <a
-                    href="#"
-                    className="p-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-colors"
-                  >
-                    <Linkedin size={18} />
-                  </a>
-                  <a
-                    href="#"
-                    className="p-2 bg-pink-500 text-white rounded-full hover:bg-pink-600 transition-colors"
-                  >
-                    <Instagram size={18} />
-                  </a>
-                </div> */}
-              </div>
-            </div>
+          {teachers.map((post) => (
+            <BlogCard key={post.id} post={post} />
           ))}
         </div>
+      </div>
+    </div>
+  );
+};
+
+const BlogCard = ({ post }) => {
+  return (
+    <div className="bg-white rounded-lg overflow-hidden shadow-sm border border-gray-100">
+      <div className="relative h-48 w-full">
+        <Image
+          src={post.image}
+          alt={post.title}
+          layout="fill"
+          objectFit="cover"
+        />
+      </div>
+
+      <div className="p-5">
+        <h2 className="text-xl font-medium text-gray-700 mb-2">{post.title}</h2>
+
+        <p className="text-gray-500 mb-4">{post.description}</p>
       </div>
     </div>
   );
