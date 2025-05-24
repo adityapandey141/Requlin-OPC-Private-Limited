@@ -26,3 +26,17 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 }
+
+.bullets span {
+  position: relative;
+}
+.bullets span:after {
+  position: absolute;
+  top: 5px;
+  left: -25px;
+  background-color: #194ac4;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  content: "";
+}

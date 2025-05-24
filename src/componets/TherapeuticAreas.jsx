@@ -24,7 +24,7 @@ const subheadings = [
 ];
 
 const TherapeuticAreas = () => (
-  <section className="bg-[#c3d4ffba] py-16 relative mb-[50px]">
+  <section className="bg-[#c3d4ffba] py-16 relative ">
     <div className="absolute inset-0 z-0">
       <Image
         src={DiverseTherapeuticSpecialisations}

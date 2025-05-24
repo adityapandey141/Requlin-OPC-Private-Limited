@@ -7,6 +7,8 @@ import CourseSection from "@/componets/CourseSection";
 import TherapeuticAreas from "@/componets/TherapeuticAreas";
 import CTASection from "@/componets/CTASection";
 import AboutClinicalResearch from "@/componets/AboutClinicalResearch";
+import Benefits from "@/componets/Benefits";
+import Founders from "@/componets/Founders";
 
 const page = () => {
   return (
@@ -17,7 +19,9 @@ const page = () => {
       <WhoWeServe />
       {/* <CourseSection /> */}
       <TherapeuticAreas />
+      <Benefits />
       <AboutClinicalResearch />
+      <Founders />
       <CTASection />
     </div>
   );
