@@ -3,9 +3,10 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import WhatisClinicalResearch from "../assets/WhatisClinicalResearch.png";
-import WeWalkClinicalResearch from "../assets/WeWalkClinicalResearch.png";
-import ScopeofClinicalResearch from "../assets/ScopeofClinicalResearch.png";
+import WhatisClinicalResearch from "../assets/Expert Guidance.jpg";
+import WeWalkClinicalResearch from "../assets/Cost Efficiency.jpg";
+import ScopeofClinicalResearch from "../assets/Accelerated Timelines.jpg";
+import Strategic from "../assets/Strategic Insights.jpg";
 
 const benefits = [
   {
@@ -30,7 +31,7 @@ const benefits = [
     id: 4,
     title: " Strategic Insights",
     excerpt: "Data analysis drives informed decision-making.",
-    image: ScopeofClinicalResearch,
+    image: Strategic,
   },
 ];
 

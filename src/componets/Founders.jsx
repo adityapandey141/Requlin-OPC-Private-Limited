@@ -3,9 +3,9 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import WhatisClinicalResearch from "../assets/WhatisClinicalResearch.png";
+import Kanthi from "../assets/Dr Kanthi Shankar.webp";
 import WeWalkClinicalResearch from "../assets/WeWalkClinicalResearch.png";
-import ScopeofClinicalResearch from "../assets/ScopeofClinicalResearch.png";
+import Kaliloor from "../assets/K Kaliloor Rahman.webp";
 
 const foundersdata = [
   {
@@ -14,7 +14,7 @@ const foundersdata = [
     subtitle: " MD & MS (Founder & Director)",
     excerpt:
       " With years of experience in clinical research and healthcare innovation, Dr Kanthi Shankar established ReQuLin to bridge the gap between regulatory compliance and real-world trial success. Their vision continues to shape how research teams operate efficiently and ethically.",
-    image: WhatisClinicalResearch,
+    image: Kanthi,
   },
   {
     id: 2,
@@ -23,7 +23,7 @@ const foundersdata = [
       "(Pharmacist, Clinical Researcher, Trainer & Marketing Professional)",
     excerpt:
       "His journey spans successful project management, training excellence, and export marketing, enabling him to guide teams toward meaningful outcomes. Known for his collaborative mindset and problem-solving skills, he has consistently driven innovation, operational efficiency, and international growth.",
-    image: WeWalkClinicalResearch,
+    image: Kaliloor,
   },
 ];
 
@@ -48,17 +48,17 @@ const Founders = () => {
 
 const BlogCard = ({ post }) => {
   return (
-    <div className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-sm md:flex-row  dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+    <div className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-sm md:flex-row   ">
       <Image
         src={post.image}
         alt="Noteworthy technology acquisitions 2021"
         className="object-cover w-full h-full rounded-t-lg md:w-70 md:rounded-none md:rounded-s-lg"
       />
       <div className="flex flex-col justify-between p-4 leading-normal">
-        <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+        <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">
           {post.title}
         </h5>
-        <h5 className="mb-2 text-md font-bold tracking-tight text-gray-500 dark:text-white">
+        <h5 className="mb-2 text-md font-bold tracking-tight text-gray-500">
           {post.subtitle}
         </h5>
         <p className="mb-3 text-gray-500 mb-4">{post.excerpt}</p>
